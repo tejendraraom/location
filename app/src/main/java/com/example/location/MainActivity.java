@@ -44,7 +44,6 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
     LocationRequest mLocationRequest;
     String lattitude;
     String longitude;
-    Double lat,lan;
     String str;
     Button uploadd,marker;
     Uri geoLocation;
