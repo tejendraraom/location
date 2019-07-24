@@ -77,7 +77,6 @@ uploadd = (Button) findViewById(R.id.upload);
             @Override
             public void onClick(View view) {
                     Intent i = new Intent(MainActivity.this, MapsActivity.class);
-                    i.setData(geoLocation);
                     startActivity(i);
 
             }

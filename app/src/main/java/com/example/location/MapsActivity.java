@@ -28,8 +28,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     List<Traffic> mTraffic;
     DatabaseReference databaseArtiest;
     Uri geolocation;
-    Double lat;
-    Double lan;
+    Double lat = 13.0154633;
+    Double lan = 77.6668698;
     Intent i = getIntent();
 
     @Override
@@ -79,8 +79,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        i.getDoubleExtra("message",lat);
-        i.getDoubleExtra("message1",lan);
         // Add a marker in Sydney and move the camera
         LatLng sydney = new LatLng(lat,lan);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
