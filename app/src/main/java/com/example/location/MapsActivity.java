@@ -27,7 +27,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private GoogleMap mMap;
     List<Traffic> mTraffic;
     DatabaseReference databaseArtiest;
-    Uri geolocation;
     Double lat = 13.0154633;
     Double lan = 77.6668698;
     Intent i = getIntent();
@@ -40,7 +39,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mTraffic = new ArrayList<>();
 
 
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
